@@ -429,6 +429,7 @@ textarea {
     top: 50%;
     left: 12px;
     transform: translateY(-50%);
+    border-radius: 2px;
 }
 
 .icon-unchecked {
@@ -437,7 +438,15 @@ textarea {
 
 .icon-checked {
     opacity: 0;
-    fill: var(--accent-color);
+    width: 16px;
+    height: 15px;
+    fill: var(--primary-light-color);
+}
+
+.input-checkbox:checked+.check-icons {
+    padding: 1px;
+    background-color: var(--accent-color);
+    border-color: transparent;
 }
 
 .input-checkbox:checked+.check-icons .icon-checked {

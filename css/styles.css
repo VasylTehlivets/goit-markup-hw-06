@@ -354,6 +354,7 @@ textarea {
     margin: 0;
     padding: 11px 42px;
     outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover,
@@ -390,6 +391,7 @@ textarea {
     margin: 0;
     padding: 11px 12px;
     outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-textarea:hover,
@@ -404,9 +406,11 @@ textarea {
     color: rgba(117, 117, 117, 0.5);
 }
 
+.label-checkbox {
+    margin-left: 8px;
+}
 
 .form-checkbox {
-    display: block;
     position: relative;
     margin-bottom: 20px;
 }
@@ -845,6 +849,13 @@ textarea {
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-mail:hover,
+.input-mail:focus {
+    border: 1px solid var(--accent-color);
 }
 
 .mail-button {
